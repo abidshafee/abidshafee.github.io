@@ -54,7 +54,8 @@ h1,h2,h3,h4,h5
 /* end all section */
 
 h2.rotate {
-    min-height: max-content;
+    max-height: 40px;
+    font-size: 18px;
 }
 
 /* start simpletextrotator */
