@@ -53,10 +53,13 @@ h1,h2,h3,h4,h5
     }
 /* end all section */
 
+h2.rotate {
+    min-height: max-content;
+}
+
 /* start simpletextrotator */
 .rotating {
   display: inline-block;
-  min-height: max-content;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
