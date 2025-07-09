@@ -1,328 +1,1223 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shafekul Abid - Tech Innovator</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
-		<title>Shafekul Abid - Avid Blogger</title>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-8D2L78Y981"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+        :root {
+            --primary: #00ff88;
+            --secondary: #0066ff;
+            --accent: #ff0066;
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #111111;
+            --text-primary: #ffffff;
+            --text-secondary: #8888aa;
+            --text-muted: #444466;
+            --border: #222244;
+            --glow-primary: rgba(0, 255, 136, 0.5);
+            --glow-secondary: rgba(0, 102, 255, 0.5);
+            --glow-accent: rgba(255, 0, 102, 0.5);
+        }
 
-			gtag('config', 'G-8D2L78Y981');
-		</script>
-		<meta name="keywords" content="">
-		<meta name="description" content="Shafekul Abid is a Driven Technologist with Expertise in SEO, Data Analysis, ML, DL, Excel, & SQL. Proficient in Managing SOHO Networks. an Avid Blogger & Video Creator.">
-        <meta name="author" content="Shafekul-Abid">
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
-		<!--Circular images-->
-		<link rel="stylesheet" href="css/circular-images.css">
-		<!-- animate -->
-		<link rel="stylesheet" href="css/animate.min.css">
-		<!-- bootstrap -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- font-awesome -->
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-		<!-- google font -->
-		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
-		<!-- fullpage -->
-		<link rel="stylesheet" href="css/jquery.fullPage.css">
-		<!-- custom -->
-		<link rel="stylesheet" href="css/templatemo-style.css">
+        /* Advanced cursor */
+        .cursor {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--primary);
+            pointer-events: none;
+            z-index: 9999;
+            transition: all 0.1s ease;
+            box-shadow: 0 0 20px var(--glow-primary);
+        }
 
-	</head>
-	<body>
-	<div id="fullpage">
-		<!-- start home -->
-		<div id="home" class="section">
-			<div class="container">
-				<div class="row">
-					<img class="circular--square" src="images/Shafekul-Abid.png" alt="Shafekul-Abid"/>
-				</div>	
-				<div class="row">
-					<div class="col-md-2"></div>
-					<div class="col-md-8 wow fadeIn" data-wow-delay="0.3s">
-						<h1>Shafekul Abid</h1>
-						<h2 class="rotate">Technical SEO Expert, Excel in ML DL EXCEL &AMP; SQL, Proficient in SOHO Networking, Avid Blogger &AMP; Video Creator</h2>
-						<p>Shafekul Abid is a Driven Technologist with Expertise in SEO, Data Analysis, ML, DL, Excel, & SQL. Proficient in Managing SOHO Networks. Avid Blogger & Video Creator.</p>
-						<h4>
-							<a href="https://medium.com/@abidshafee">Read My Blog</a>
-							<span> | </span><a href="https://www.youtube.com/@ShafekulAbid/"> Visit My Channel</a>
-							<span> | </span><a href="https://www.fiverr.com/shafikulabid"> Buy My Services</a>
-						</h4>
-						<a href="#work" class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="0.3s">Get started</a>
-					</div>
-					<div class="col-md-2"></div>
-				</div>
-			</div>
-		</div>
-		<!-- end home -->
+        .cursor-outline {
+            position: fixed;
+            width: 40px;
+            height: 40px;
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9998;
+            transition: all 0.15s ease;
+            opacity: 0.5;
+        }
 
-		<!-- start work -->
-		<div id="work" class="section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 wow bounce">
-						<h2>WHAT I DO</h2>
-					</div>
-                </div>  
-                
-                <div class="row">
-					<div class="col-md-3 col-xs-11 wow fadeInUp" data-wow-delay="0.3s">
-						<div class="media">
-							<div class="media-object media-left">
-								<i class="fa fa-line-chart" aria-hidden="true"></i>
-							</div>
-							<div class="media-body">
-								<h3 class="media-heading">Techncal SEO</h3>
-								<p>I enhance online visibility through content optimization, keyword research, technical improvements, and link-building. Results higher search rankings and increased organic traffic.</p>
-								<a href="https://www.fiverr.com/s/Dx6DeD" class="btn btn-default" data-wow-delay="0.3s">Buy My Service!</a>
-							</div>
-						</div>
-					</div>
+        /* Animated background with particles */
+        .bg-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
 
-					<div class="col-md-3 col-xs-11 wow fadeInUp" data-wow-delay="0.3s">
-						<div class="media">
-							<div class="media-object media-left">
-								<i class="fa fa-braille" aria-hidden="true"></i>
-							</div>
-							<div class="media-body">
-								<h3 class="media-heading">Data Modeling</h3>
-								<p>Besides SEO, I excel in Data Analysis, ML, DL. I turn data into actionable insights, build predictive models, automate processes, and drive innovation with a track record of delivering results.</p>
-								<a href="https://www.fiverr.com/s/5PpbYk" class="btn btn-default" data-wow-delay="0.5s">Buy This Service!</a>
-							</div>
-						</div>
-					</div>
-                    
-					<div class="col-md-3 col-xs-11 wow fadeInUp" data-wow-delay="0.3s">
-						<div class="media">
-							<div class="media-object media-left">
-								<i class="fa fa-area-chart" aria-hidden="true"></i>
-							</div>
-							<div class="media-body">
-								<h3 class="media-heading">Data Analysis</h3>
-								<p>I excel in data analysis with Excel, SQL, and Pandas. I transform raw data into insights, design databases, and automate processes for data-driven decisions and streamlined workflows.</p>
-								<a href="https://www.fiverr.com/s/E96dk8" class="btn btn-default" data-wow-delay="0.5s">Buy This Service!</a>
-							</div>
-						</div>
-					</div>
-                    
-					<div class="col-md-3 col-xs-11 wow fadeInUp" data-wow-delay="0.3s">
-						<div class="media">
-							<div class="media-object media-left">
-								<i class="fa fa-building" aria-hidden="true"></i>
-							</div>
-							<div class="media-body">
-								<h3 class="media-heading">Networking</h3>
-								<p>I specialize in SOHO network setup and management, ensuring reliable connectivity, security, and performance. I design, configure, and maintain networks for seamless remote office productivity</p>
-								<a href="https://www.buymeacoffee.com/shafekulabid" class="btn btn-default" data-wow-delay="0.5s">Rate My Service!</a>
-							</div>
-						</div>
-					</div>
-                    
-				</div>
-				<div class="row"></div> 
-			</div>
-		</div>
-		<!-- end work -->
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: var(--primary);
+            border-radius: 50%;
+            animation: float 15s infinite linear;
+            opacity: 0.3;
+        }
 
-		<!-- start about -->
-		<div id="about" class="section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-xs-11 wow fadeInLeft" data-wow-delay="0.3s">
-						<h2>ABOUT SHAFEKUL ABID</h2>
-						<h4>Technical SEO &AMP; Data Expert</h4>
-						<p>
-							Shafekul Abid: A Tech enthusiast holding a Bachelor's degree in Computer Science. Proficient in Python, JavaScript, and PHP programming. Expertise in SEO, Data Analysis, ML, DL, Excel & SQL. Skilled in SOHO Network Management. Avid Blogger & Video Creator.
-						</p>
-						<h4>
-							<a href="#" class="btn btn-default"><i class="fa fa-download"></i> Download My Resume</a>
-						</h4>
-					</div>
-					<div class="col-md-6 col-xs-11 wow fadeInRight" data-wow-delay="0.3s">
-						<span class="text-top">Python <small>95%</small></span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
-							</div>
-						<span>TensorFlow <small>80%</small></span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-							</div>
-						<span>React Native <small>55%</small></span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-							</div>
-						<span>PowerBI <small>90%</small></span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-							</div>
-						<span>Excel <small>95%</small></span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
-							</div>
-						<span>Pandas<small>90%</small></span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-							</div>
-						<span>SQL<small>80%</small></span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-							</div>
-						<span>PySpark<small>40%</small></span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
-							</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- end about -->
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.3;
+            }
+            90% {
+                opacity: 0.3;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
 
-		<!-- start portfolio -->
-		<div id="portfolio" class="section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2 class="wow bounce">SHAFEKUL ABID'S PORTFOLIO</h2>
-				</div>
-				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.3s">
-					<div class="portfolio-thumb">
-						<img src="images/portfolio-img1.png" class="img-responsive" alt="Shafekul Abid - ML Web App">
-							<a class="portfolio-overlay" href="https://predictionmodel.streamlit.app/">
-								<h4>Prediction Model Web App</h4>
-								<h5>Author: Shafekul Abid</h5>
-							</a>
-					</div>
-				</div>
-				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.3s">
-					<div class="portfolio-thumb">
-						<img src="images/ts-forcasting.png" class="img-responsive" alt="Shafekul Abid - Time Series Forcasting Repo">
-							<a class="portfolio-overlay" href="https://github.com/abidshafee/autoML-tsModel">
-								<h4>Time Series Forcasting</h4>
-								<h5>Author: Shafekul Abid</h5>
-							</a>
-					</div>
-				</div>
-				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.3s">
-					<div class="portfolio-thumb">
-						<img src="images/PowerBI-DB.png" class="img-responsive" alt="Shafekul Abid - Power BI Dashboard">
-							<a class="portfolio-overlay" href="https://app.powerbi.com/groups/me/reports/5309e317-322c-4eef-99f7-6ad90bda5ae1?ctid=58867813-b220-4bf3-8408-f00c80768ed1&pbi_source=linkShare">
-								<h4>PowerBI Dashboard</h4>
-								<h5>Author: Shafekul Abid</h5>
-							</a>
-					</div>
-				</div>
-				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.3s">
-					<div class="portfolio-thumb">
-						<img src="images/data distribution-CKD Prediction.png" class="img-responsive" alt="Shafekul Abid - Research on CKD Notebook Repo">
-							<a class="portfolio-overlay" href="https://github.com/abidshafee/CKD_prediction">
-								<h4>Research on improving CKD Prediction ML Model Acurecy</h4>
-								<h5>Author: Shafekul Abid</h5>
-							</a>
-					</div>
-				</div>
-				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.3s">
-					<div class="portfolio-thumb">
-						<img src="images/portfolio-img5.png" class="img-responsive" alt="Shafekul Abid - Read My Blog in Medium">
-							<a class="portfolio-overlay" href="https://medium.com/@abidshafee">
-								<h3>Read my Blog @Medium</h3>
-								<h5>Author: Shafekul Abid</h5>
-							</a>
-					</div>
-				</div>
+        /* Advanced grid background */
+        .grid-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 255, 136, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 136, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: grid-move 20s linear infinite;
+            z-index: -1;
+        }
 
-				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.3s">
-					<div class="portfolio-thumb">
-						<img src="images/portfolio-img6.jpg" class="img-responsive" alt="Shafekul Abid - Technical SEO Expert">
-							<a class="portfolio-overlay" href="https://shafekulabid.blogspot.com/">
-								<h3>Shafekul-Abid BlogSpot</h3>
-								<h5>Author: Shafekul Abid</h5>
-							</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end portfolio -->
+        @keyframes grid-move {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
 
-		<!-- start contact -->
-		<div id="contact" class="section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5 col-lg-offset-1 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-						<address>
-							<p class="contact-title">Get In Touch</p>
-							<p><i class="fa fa-phone"></i> 880 1738 0000000</p>
-							<p><i class="fa fa-at"></i> abidshafee@gmail.com</p>
-							<p><i class="fa fa-location-crosshairs"></i> 000 St, Dhaka, Bangladesh</p>
-							<h4>Elsewhere: </h4>
-							<ul class="social-icon">
-								<li><a href="https://www.facebook.com/shafekulAbid/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-								<li><a href="https://www.linkedin.com/in/md-shafekul-abid/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-								<li><a href="https://github.com/abidshafee" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-								<li><a href="https://www.youtube.com/@ShafekulAbid" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-								<li><a href="https://www.youtube.com/@CSSchool" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-								<li><a href="https://twitter.com/ShafekulAbid" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-								<li><a href="https://g.dev/abidshafee" target="_blank"><i class="fa-brands fa-google"></i></a></li>
-								<li><a href="https://medium.com/@abidshafee" target="_blank"><i class="fab fa-medium"></i></a></li>
-								<li><a href="https://www.instagram.com/shafekulabid/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-								<li><a href="https://shafekulabid.blogspot.com/" target="_blank"><i class="fa-brands fa-blogger"></i></a></li>
-								<li><a href="https://abidshafee.tumblr.com/" target="_blank"><i class="fa-brands fa-tumblr"></i></a></li>
-								<li><a href="https://www.pinterest.com/ShafekulAbid" target="_blank"><i class="fab fa-pinterest"></i></a></li>
-								<li><a href="https://www.buymeacoffee.com/shafekulabid" target="_blank"><i class="fa fa-leaf" aria-hidden="true"></i></a></li>
-							</ul>
-						</address>
-					</div>
-					<div class="col-lg-6 col-md-6 col-xs-10 wow fadeInUp" data-wow-delay="0.3s">
-						<form action="https://formsubmit.co/d9e703fcab6aece1dd6a09f42078cc96" method="POST">
-							<input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required>
-							<input name="email" type="email" class="form-control" id="email" placeholder="Your Email" required>
-							<input type="hidden" name="_subject" value="Git Portfolio Response!">
-							<textarea name="message" rows="5" class="form-control" id="message" placeholder="Your Message"></textarea>
-							<input name="send" type="submit" class="form-control" id="send" value="SEND ME">
-						</form>
-					</div>
-					<!-- end contact -->
-				</div>
-			</div>
-		</div>
-		<!-- start footer -->
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 wow fadeIn" data-wow-delay="0.3s">
-						<p>Copyright &copy; 2023 
-							<a rel="" href="https://abidshafee.github.io/">Shafekul Abid</a> Personal Profile | <a href="https://shafekulabid.blogspot.com/p/privacy-policy.html">Privacy Policy</a> </p>
-						<hr>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- end footer -->
-	</div>
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1rem 0;
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
 
-		<!-- jQuery -->
-		<script src="js/jquery.js"></script>
-		<!-- bootstrap -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- fullpage -->
-		<script src="js/jquery.fullPage.js"></script>
-		<!-- smoothScroll -->
-		<script src="js/smoothscroll.js"></script>
-		<!-- wow -->
-		<script src="js/wow.min.js"></script>
-		<!-- text rotater -->
-		<script src="js/jquery.simple-text-rotator.js"></script>
-		<!-- custom -->
-		<script src="js/custom.js"></script>
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
 
-	</body>
+        .logo {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-shadow: 0 0 10px var(--glow-primary);
+            transition: all 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+            text-shadow: 0 0 20px var(--glow-primary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 3rem;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+        }
+
+        .nav-links a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            border-radius: 25px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+
+        .nav-links a:hover::before {
+            opacity: 0.1;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        /* Mobile menu */
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .mobile-menu span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary);
+            margin: 3px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 2rem;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            animation: heroFadeIn 2s ease-out;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, var(--primary), var(--secondary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradient-shift 3s ease infinite;
+        }
+
+        @keyframes gradient-shift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            line-height: 1.8;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: var(--bg-primary);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 255, 136, 0.4);
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        /* 3D Floating Elements */
+        .floating-3d {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            border-radius: 20px;
+            animation: float3d 6s ease-in-out infinite;
+            opacity: 0.1;
+        }
+
+        .floating-3d:nth-child(1) {
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-3d:nth-child(2) {
+            top: 60%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+
+        .floating-3d:nth-child(3) {
+            bottom: 20%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+
+        @keyframes float3d {
+            0%, 100% {
+                transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+            }
+            50% {
+                transform: translateY(-30px) rotateX(180deg) rotateY(180deg);
+            }
+        }
+
+        /* Sections */
+        .section {
+            padding: 120px 0;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 4rem;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            border-radius: 2px;
+        }
+
+        /* Skills Grid with 3D Cards */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .skill-card {
+            background: rgba(17, 17, 17, 0.8);
+            border-radius: 20px;
+            padding: 2.5rem;
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            transform-style: preserve-3d;
+        }
+
+        .skill-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--primary), var(--secondary), var(--accent));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+
+        .skill-card:hover::before {
+            opacity: 0.05;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-15px) rotateX(5deg);
+            box-shadow: 0 30px 60px rgba(0, 255, 136, 0.2);
+            border-color: var(--primary);
+        }
+
+        .skill-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            transition: all 0.3s ease;
+            animation: iconGlow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes iconGlow {
+            0% { box-shadow: 0 0 20px var(--glow-primary); }
+            100% { box-shadow: 0 0 30px var(--glow-secondary); }
+        }
+
+        .skill-card:hover .skill-icon {
+            transform: scale(1.1) rotateY(180deg);
+        }
+
+        .skill-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .skill-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* About Section with Timeline */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .about-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        .about-text h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .tech-item {
+            padding: 0.5rem 1rem;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid var(--primary);
+            border-radius: 25px;
+            color: var(--primary);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .tech-item:hover {
+            background: var(--primary);
+            color: var(--bg-primary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px var(--glow-primary);
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .stat-card {
+            background: rgba(17, 17, 17, 0.8);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .stat-card:hover::before {
+            opacity: 0.1;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 255, 136, 0.2);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        /* Advanced Contact Section */
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem;
+            background: rgba(17, 17, 17, 0.8);
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 255, 136, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .contact-item:hover::before {
+            left: 100%;
+        }
+
+        .contact-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 20px 40px rgba(0, 255, 136, 0.2);
+            border-color: var(--primary);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .contact-form {
+            background: rgba(17, 17, 17, 0.8);
+            border-radius: 20px;
+            padding: 3rem;
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-form::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            opacity: 0.05;
+            pointer-events: none;
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.3);
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(0, 255, 136, 0.1);
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 3rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-links a {
+            width: 60px;
+            height: 60px;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            color: var(--bg-primary);
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 20px 40px var(--glow-primary);
+        }
+
+        /* Animations */
+        @keyframes heroFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Scroll animations */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        /* Loading animation */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            animation: fadeOut 1s ease-out 2s forwards;
+        }
+
+        .loading-spinner {
+            width: 80px;
+            height: 80px;
+            border: 3px solid var(--border);
+            border-top: 3px solid var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <div class="cursor"></div>
+    <div class="cursor-outline"></div>
+
+    <div class="bg-container">
+        <div class="grid-bg"></div>
+    </div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">&lt;/SA&gt;</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="floating-3d"></div>
+        <div class="floating-3d"></div>
+        <div class="floating-3d"></div>
+        
+        <div class="hero-content">
+            <div class="hero-badge">🚀 Available for Projects</div>
+            <h1>Shafekul Abid</h1>
+            <p class="subtitle">AI-Powered Tech Innovator & Data Scientist</p>
+            <p class="hero-description">
+                Transforming businesses through cutting-edge AI, machine learning, and data-driven solutions. 
+                I build intelligent systems that predict, optimize, and revolutionize how companies operate.
+            </p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <span>💬</span> Let's Collaborate
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    <span>🎯</span> Explore My Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="section-title scroll-reveal">About Me</h2>
+        <div class="about-content">
+            <div class="about-text scroll-reveal">
+                <h3>The Future of Technology</h3>
+                <p>
+                    I'm a visionary technologist specializing in artificial intelligence, machine learning, 
+                    and advanced data analytics. With expertise in Python, JavaScript, and cutting-edge 
+                    frameworks, I create intelligent solutions that push the boundaries of what's possible.
+                </p>
+                <p>
+                    My passion lies in transforming complex data into actionable insights, building 
+                    predictive models that drive business growth, and creating seamless digital experiences 
+                    that captivate and convert.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-item">Python</span>
+                    <span class="tech-item">JavaScript</span>
+                    <span class="tech-item">TensorFlow</span>
+                    <span class="tech-item">React</span>
+                    <span class="tech-item">Node.js</span>
+                    <span class="tech-item">PostgreSQL</span>
+                    <span class="tech-item">Docker</span>
+                    <span class="tech-item">AWS</span>
+                </div>
+            </div>
+            <div class="stats-container scroll-reveal">
+                <div class="stat-card">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">AI Projects</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Client Success</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">500K+</span>
+                    <span class="stat-label">Data Points</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Innovation</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title scroll-reveal">Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card scroll-reveal">
+                <div class="skill-icon">🤖</div>
+                <h3>AI & Machine Learning</h3>
+                <p>
+                    Building intelligent systems with advanced neural networks, deep learning algorithms, 
+                    and predictive analytics that revolutionize business operations and decision-making processes.
+                </p>
+            </div>
+            <div class="skill-card scroll-reveal">
+                <div class="skill-icon">📊</div>
+                <h3>Data Science & Analytics</h3>
+                <p>
+                    Transforming raw data into strategic insights using advanced statistical methods, 
+                    visualization techniques, and big data processing for data-driven innovation.
+                </p>
+            </div>
+            <div class="skill-card scroll-reveal">
+                <div class="skill-icon">🔍</div>
+                <h3>Research & Development</h3>
+                <p>
+                    Pioneering next-generation technologies through cutting-edge research, prototyping 
+                    innovative solutions, and developing breakthrough algorithms that shape the future.
+                </p>
+            </div>
+            <div class="skill-card scroll-reveal">
+                <div class="skill-icon">🌐</div>
+                <h3>Full-Stack Development</h3>
+                <p>
+                    Creating seamless digital experiences with modern frameworks, responsive design, 
+                    and scalable architecture that delivers exceptional user experiences across all devices.
+                </p>
+            </div>
+            <div class="skill-card scroll-reveal">
+                <div class="skill-icon">☁️</div>
+                <h3>Cloud & DevOps</h3>
+                <p>
+                    Architecting robust cloud infrastructure with automated deployment pipelines, 
+                    containerization, and scalable microservices for enterprise-grade applications.
+                </p>
+            </div>
+            <div class="skill-card scroll-reveal">
+                <div class="skill-icon">🚀</div>
+                <h3>Performance Optimization</h3>
+                <p>
+                    Maximizing system performance through advanced optimization techniques, 
+                    efficient algorithms, and cutting-edge caching strategies for lightning-fast applications.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title scroll-reveal">Let's Connect</h2>
+        <div class="contact-content">
+            <div class="contact-info scroll-reveal">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>shafekul.abid@example.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🌐</div>
+                    <div>
+                        <h3>LinkedIn</h3>
+                        <p>linkedin.com/in/shafekul-abid</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💻</div>
+                    <div>
+                        <h3>GitHub</h3>
+                        <p>github.com/shafekul-abid</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form scroll-reveal">
+                <h3 style="margin-bottom: 2rem; color: var(--primary);">Start Your Project</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <span>🚀</span> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" title="LinkedIn">💼</a>
+                <a href="#" title="GitHub">💻</a>
+                <a href="#" title="Twitter">🐦</a>
+                <a href="#" title="Email">📧</a>
+            </div>
+            <p>&copy; 2024 Shafekul Abid. All rights reserved.</p>
+            <p style="margin-top: 1rem; color: var(--text-muted);">
+                Built with passion and cutting-edge technology
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Custom cursor
+        const cursor = document.querySelector('.cursor');
+        const cursorOutline = document.querySelector('.cursor-outline');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            
+            cursorOutline.style.left = e.clientX + 'px';
+            cursorOutline.style.top = e.clientY + 'px';
+        });
+
+        // Particles
+        function createParticles() {
+            const particleCount = 50;
+            const bgContainer = document.querySelector('.bg-container');
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + 'vw';
+                particle.style.animationDelay = Math.random() * 15 + 's';
+                particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+                bgContainer.appendChild(particle);
+            }
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! I\'ll get back to you soon.');
+        });
+
+        // Mobile menu toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = parseInt(counter.textContent);
+                const increment = target / 100;
+                let current = 0;
+
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    counter.textContent = Math.floor(current) + (counter.textContent.includes('%') ? '%' : '+');
+                }, 20);
+            });
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            createParticles();
+            
+            // Animate counters when they come into view
+            const statsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounters();
+                        statsObserver.unobserve(entry.target);
+                    }
+                });
+            });
+            
+            const statsContainer = document.querySelector('.stats-container');
+            if (statsContainer) {
+                statsObserver.observe(statsContainer);
+            }
+        });
+
+        // Typing effect for hero title
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            
+            type();
+        }
+
+        // Initialize typing effect
+        setTimeout(() => {
+            const heroTitle = document.querySelector('.hero h1');
+            const originalText = heroTitle.textContent;
+            typeWriter(heroTitle, originalText, 80);
+        }, 2500);
+    </script>
+</body>
 </html>
