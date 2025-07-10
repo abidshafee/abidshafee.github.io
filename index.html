@@ -264,6 +264,9 @@
         background: rgba(0,255,136,0.18);
         box-shadow: 0 4px 16px 0 var(--glow-primary);
     }
+    .cursor, .cursor-outline {
+        display: none;
+    }
 }
 
 /* Hamburger micro-interaction */
@@ -304,6 +307,14 @@
             z-index: 9998;
             transition: all 0.15s ease;
             opacity: 0.5;
+        }
+
+        /* Hide custom cursor on small screens */
+        @media (max-width: 768px) {
+            .cursor,
+            .cursor-outline {
+                display: none;
+            }
         }
 
         /* Animated background with particles */
@@ -503,6 +514,9 @@
                 transform: scale(0.96);
                 background: rgba(0,255,136,0.18);
                 box-shadow: 0 4px 16px 0 var(--glow-primary);
+            }
+            .cursor, .cursor-outline {
+                display: none;
             }
         }
 
@@ -1071,6 +1085,9 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            .cursor, .cursor-outline {
+                display: none;
+            }
             .nav-links {
                 display: none;
             }
