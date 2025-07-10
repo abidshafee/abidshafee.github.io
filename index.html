@@ -897,6 +897,7 @@
             grid-template-columns: 1fr 1fr;
             gap: 5rem;
             margin-top: 3rem;
+            align-items: stretch;
         }
 
         .contact-info {
@@ -960,6 +961,10 @@
             border: 1px solid var(--border);
             position: relative;
             overflow: hidden;
+            min-height: 520px; /* Approximate height of four contact cards */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .contact-form::before {
@@ -1322,6 +1327,41 @@
             outline: 2px solid #0066ff;
             box-shadow: 0 0 0 4px #00ff8855;
         }
+
+        #thankYouMessage {
+            display: none;
+            text-align: center;
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            background: rgba(0,255,136,0.08);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px var(--glow-primary);
+            padding: 2rem 1rem;
+            animation: fadeInScale 0.7s cubic-bezier(0.4,0,0.2,1);
+        }
+        @keyframes fadeInScale {
+            0% { opacity: 0; transform: scale(0.95); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        #thankYouMessage .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+            color: var(--primary);
+            text-shadow: 0 0 12px var(--glow-primary);
+        }
+        #thankYouMessage strong {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        #thankYouMessage p {
+            color: var(--text-primary);
+            font-size: 1.1rem;
+            margin: 0.5rem 0 0 0;
+        }
     </style>
 </head>
 <body>
@@ -1517,10 +1557,8 @@
                 </div>
             </div>
             <div class="contact-form scroll-reveal">
-                <h3 style="margin-bottom: 2rem; color: var(--primary);">Start Your Project</h3>
-                <form
-action="https://formspree.io/f/xnnvevnd"
-  method="POST">
+                <!-- Removed header for cleaner look -->
+                <form id="contactForm" action="https://formspree.io/f/xnnvevnd" method="POST">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
@@ -1541,6 +1579,14 @@ action="https://formspree.io/f/xnnvevnd"
                         <span>🚀</span> Send Message
                     </button>
                 </form>
+                <div id="thankYouMessage">
+                    <span class="icon">✅</span>
+                    <strong>Thank you for reaching out!</strong>
+                    <p>Your message has been sent successfully.<br>I'll get back to you soon.</p>
+                </div>
+                <div id="formErrorMessage" style="display:none; text-align:center; color:var(--accent); font-size:1.1rem; margin-top:2rem;">
+                    Oops! Something went wrong. Please try again later or email me directly.
+                </div>
             </div>
         </div>
     </section>
@@ -1552,8 +1598,8 @@ action="https://formspree.io/f/xnnvevnd"
                 <a href="https://github.com/abidshafee" title="GitHub" rel="noopener" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 <a href="https://medium.com/@abidshafee" title="Medium" rel="noopener" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a>
                 <a href="mailto:shafekulabid+dnespm@gmail.com" title="Email" rel="noopener" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-            <p>&copy; 2025 Shafekul Abid. All rights reserved.</p>
+           </div>
+            <p>&copy; 2024 Shafekul Abid. All rights reserved.</p>
             <p style="margin-top: 1rem; color: var(--text-muted);">
                 Built with passion and cutting-edge technology
             </p>
@@ -1694,12 +1740,6 @@ action="https://formspree.io/f/xnnvevnd"
 
         document.querySelectorAll('.scroll-reveal').forEach(el => {
             observer.observe(el);
-        });
-
-        // Form submission
-        document.querySelector('form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your message! I\'ll get back to you soon.');
         });
 
         // Mobile menu toggle (hamburger to X)
@@ -1844,6 +1884,40 @@ action="https://formspree.io/f/xnnvevnd"
                 }
             });
         });
+
+        // Contact form AJAX submission
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const thankYou = document.getElementById('thankYouMessage');
+            const errorMsg = document.getElementById('formErrorMessage');
+            thankYou.style.display = 'none';
+            errorMsg.style.display = 'none';
+            const formData = new FormData(contactForm);
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+                if (response.ok) {
+                    contactForm.style.display = 'none';
+                    thankYou.style.display = 'block';
+                    // Auto-reload form after 4 seconds
+                    setTimeout(() => {
+                        contactForm.reset();
+                        contactForm.style.display = 'block';
+                        thankYou.style.display = 'none';
+                    }, 4000);
+                } else {
+                    errorMsg.style.display = 'block';
+                }
+            } catch {
+                errorMsg.style.display = 'block';
+            }
+        });
+    }
     </script>
 </body>
 </html>
